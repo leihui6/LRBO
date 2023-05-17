@@ -29,15 +29,18 @@ The dataset generation for the robot base is elaborated here.(coming soon)
 ### Detection of Robot Base
 
 Here we captured more than a series of point clouds from a [3D camera](https://github.com/leihui6/PMD_Camera). The raw point clouds are green and the Regions of Interest (ROIs) are blue (they are the same size, so they might be a bit hard to see :).
+
 <img src="./data/Raw_ROI.gif" width="50%" style="display: block; margin: 0 auto"/>  
 
 ### Registration of Robot Base
 These ROIs that extracted from raw point clouds is aligned with a model of robot base (actually is a point cloud as well), the registration result is shown below
+
 <img src="./data/Raw_Model.gif" width="50%" style="display: block; margin: 0 auto"/> 
 
 ### Hand-eye Calibration
 
 In fact, we can perform a hand-eye calibration with only a single point cloud. Therefore, we executed hundreds of calibrations (**eye-in-hand calibration**) during each data acquisition. The result is shown below, where the camera image is displayed close to the end-effector.
+
 <center>
 <img  src="./data/REAL-position.png" width="35%" /> <img  src="./data/CameraPosition.gif" width="40%" /> 
 </center>
@@ -56,7 +59,8 @@ Two types of testing are performed, called static testing and dynamic testing. S
 
 | Method 	|    Position error (mm)    	| Rotation error (deg) 	| Runtime 	|  Camera Type 	|
 |:------:	|:-------------------------:	|:--------------------:	|:-------:	|:------------:	|
-|  Ours  	| **X**: 1.874 **Y**:1.092 **Z**: 0.303 	|         0.391        	|   1.5   	| ToF   Camera 	|
+|  Ours  	| **X**: 1.874 **Y**:1.092 **Z**: 0.303 	|         0.391        	|   1.5 + 5 (move)   	| ToF   Camera 	|
+|  Ours  	| **X**: 1.159 **Y**:0.697 **Z**: 1.025 	|         0.994        	|  <1 + 5 (move)   	| Structured of Light   Camera 	|
 
 ## Implement Details
 
