@@ -1,6 +1,6 @@
-# Look at Robot Base Once: Hand-Eye Calibration with Point Clouds of Robot Base Leveraging Learning-Based 3D Vision
+# Look at Robot Base Once: Hand-Eye Calibration
 
-Welcome to our project: Look at Robot Base (**LRBO**): A Hand-eye Calibration using 3D Vision
+Welcome to our project: Look at Robot Base (**LRBO**): Hand-eye Calibration
 
 Our proposed method has **THREE** features:
 
