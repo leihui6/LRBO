@@ -9,6 +9,3 @@ In robot base registration, a dataset containing the ground truth data is requir
 Before that, a robot base point cloud is required, here we provide UR\*_base. They look like the following
 
 <img src="./figs/UR_robot_base.png" width='80%' style="display: block; margin: 0 auto"/>  
-
-
-In our dataset, the 
