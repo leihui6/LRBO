@@ -41,9 +41,7 @@ These ROIs that extracted from raw point clouds is aligned with a model of robot
 
 In fact, we can perform a hand-eye calibration with only a single point cloud. Therefore, we executed hundreds of calibrations (**eye-in-hand calibration**) during each data acquisition. The result is shown below, where the camera image is displayed close to the end-effector.
 
-<center>
-<img  src="./data/REAL-position.png" width="35%" /> <img  src="./data/CameraPosition.gif" width="40%" /> 
-</center>
+<img  src="./data/workflow.gif" width="100%" /> 
 
 ### Video
 
