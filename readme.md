@@ -19,8 +19,9 @@ Hand-eye calibration is a fundamental task in vision-based robotic systems, refe
 
 ## Pipeline
 
-The pipeline for our proposed method is shown below, where eye-in-hand calibration is taken as an example because it is more complex compared to eye-to-hand calibration. The estimation of the transformation matrix between the camera and the robot base is a common problem for them.
-<img src="./data/pipeline.png" style="display: block; margin: 0 auto"/>  
+The pipeline for our proposed method is shown below (will be published soon), where eye-in-hand calibration is taken as an example because it is more complex compared to eye-to-hand calibration. The estimation of the transformation matrix between the camera and the robot base is a common problem for them.
+
+ <!--<img src="./data/pipeline.png" style="display: block; margin: 0 auto"/>  -->
 
 The dataset generation for the robot base is elaborated here.(coming soon)
 
