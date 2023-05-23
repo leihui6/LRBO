@@ -6,12 +6,22 @@ Our proposed method has **THREE** features:
 
 1. *[**EASY**]* It doesn't require any additional calibration objects (**No calibration objects**), such as a chessboard or something like that.
 2. Hand-eye calibration can be done with **only point clouds**.
-3. *[**FAST**]* The processing time is fast (**1 sec**) and the result is as accurate as other 3D vision-based methods.
-4. Overall, it is a **fully automatic** hand-eye calibration.
+3. *[**FAST**]* The processing time could be fast (**<1 sec**) and the result is as accurate as other 3D vision-based methods.
+4. Overall, it is a **fully automatic** hand-eye calibration based on 3D vision (point cloud).
+
+## Requirement
+
+The overall requirement is as follows(Please install them following the official guideline):
+
+- [PRADATOR](https://github.com/prs-eth/OverlapPredator): a 3D registration for low-overlap point clouds.
+- [PVRCNN/PVRCNN++](https://github.com/open-mmlab/OpenPCDet): a 3D detection module for the robot base detection.
+- The utilization for both above can be seen [here](./implementation/).
+
+However, to utilize our solution in our project quickly, [here](./implementation/) contains the guideline where the performance can not be guaranteed but in simple cases, it should be working.
 
 ## Content
 
-In this repository, we will try to provide some tutorials and videos that give more details and performance of our method. We believe that our proposed method has more potential to be used in the industrial field and applications such as vision-based grasping, assembly and quality inspection.
+In this repository, we will try to provide some tutorials and videos that give more details and the performance of our method. We believe that our proposed method has more potential to be used in the industrial field and applications such as vision-based grasping, assembly and quality inspection.
 
 ## Abstract
 
@@ -31,18 +41,18 @@ The dataset generation for the robot base is elaborated here.(coming soon)
 
 Here we captured more than a series of point clouds from a [3D camera](https://github.com/leihui6/PMD_Camera). The raw point clouds are green and the Regions of Interest (ROIs) are blue (they are the same size, so they might be a bit hard to see :).
 
-<img src="./data/Raw_ROI.gif" width="50%" style="display: block; margin: 0 auto"/>  
+<img src="./data/Raw_ROI.gif" width="20%" style="display: block; margin: 0 auto"/>  
 
 ### Registration of Robot Base
 These ROIs that extracted from raw point clouds is aligned with a model of robot base (actually is a point cloud as well), the registration result is shown below
 
-<img src="./data/Raw_Model.gif" width="50%" style="display: block; margin: 0 auto"/> 
+<img src="./figs/Raw_Model.gif" width="20%" style="display: block; margin: 0 auto"/> 
 
 ### Hand-eye Calibration
 
 In fact, we can perform a hand-eye calibration with only a single point cloud. Therefore, we executed hundreds of calibrations (**eye-in-hand calibration**) during each data acquisition. The result is shown below, where the camera image is displayed close to the end-effector.
 
-<img  src="./data/workflow.gif" width="100%" /> 
+<img  src="./figs/workflow.gif" width="100%" /> 
 
 ### Video
 
@@ -51,7 +61,7 @@ The video and tutorial are coming soon.
 ## Repeatability Experiment
 By measuring the variability in the results, repeatability experiments can provide insight into the stability and robustness of the calibration method and ensure that the results are not merely due to random fluctuations. Therefore, more than 200 hand-eye calibration were conducted in 300 sec (**surprise**?!). The results are shown below.
 
-<img src="./data/normRandT8.png" width="80%" style="display: block; margin: 0 auto"/> 
+<img src="./figs/normRandT8.png" width="80%" style="display: block; margin: 0 auto"/> 
 
 ## Accuracy Experiment
 Two types of testing are performed, called static testing and dynamic testing. Static testing is considered the ground truth.
