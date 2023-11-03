@@ -36,7 +36,7 @@ Hand-eye calibration is a fundamental task in vision-based robotic systems, refe
 
 The pipeline for our proposed method is shown below (will be published soon), where eye-in-hand calibration is taken as an example because it is more complex compared to eye-to-hand calibration. The estimation of the transformation matrix between the camera and the robot base is a common problem for them.
 
-<img src="./Figs/pipeline.png" style="display: block; margin: 0 auto"/> 
+<img src="./figs/pipeline.png" style="display: block; margin: 0 auto"/> 
 
 The dataset generation for the robot base is elaborated in paper.
 
@@ -46,18 +46,18 @@ The dataset generation for the robot base is elaborated in paper.
 
 Here we captured more than a series of point clouds from a [3D camera](https://github.com/leihui6/PMD_Camera). The raw point clouds are green and the Regions of Interest (ROIs) are blue (they are the same size, so they might be a bit hard to see :).
 
-<img src="./Figs/Raw_ROI.gif" width="20%" style="display: block; margin: 0 auto"/>  
+<img src="./figs/Raw_ROI.gif" width="20%" style="display: block; margin: 0 auto"/>  
 
 ### Registration of Robot Base
 These ROIs that extracted from raw point clouds is aligned with a model of robot base (actually is a point cloud as well), the registration result is shown below
 
-<img src="./Figs/Raw_Model.gif" width="20%" style="display: block; margin: 0 auto"/> 
+<img src="./figs/Raw_Model.gif" width="20%" style="display: block; margin: 0 auto"/> 
 
 ### Hand-eye Calibration
 
 In fact, we can perform a hand-eye calibration with only a single point cloud. Therefore, we executed hundreds of calibrations (**eye-in-hand calibration**) during each data acquisition. The result is shown below, where the camera image is displayed close to the end-effector.
 
-<img  src="./Figs/workflow.gif" width="100%" /> 
+<img  src="./figs/workflow.gif" width="100%" /> 
 
 ### Video
 
