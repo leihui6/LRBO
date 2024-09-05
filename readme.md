@@ -87,14 +87,17 @@ We here utilized real-world data to train these framework. The trained model in 
 If you found it is helpful, please cite:
 
 ``` 
-@misc{li2023look,
-    title={Look at Robot Base Once: Hand-Eye Calibration with Point Clouds of Robot    Base Leveraging Learning-Based 3D Vision}, 
-    author={Leihui Li, Xingyu Yang, Riwei Wang and Xuping Zhang},
-    year={2023},
-    eprint={2311.01335},
-    archivePrefix={arXiv},
-    primaryClass={cs.RO}
-}
+ @article{Li_Yang_Wang_Zhang_2024b, 
+ title={Automatic robot hand-eye calibration enabled by learning-based 3D vision}, 
+ volume={110}, 
+ DOI={10.1007/s10846-024-02166-4}, 
+ number={3}, 
+ journal={Journal of Intelligent & Robotic Systems}, 
+ author={Li, Leihui and Yang, Xingyu and Wang, Riwei and Zhang, Xuping}, 
+ year={2024}, 
+ month={Sep}, 
+ pages={1–23} }
+
 ```
 
 ## Contribution
