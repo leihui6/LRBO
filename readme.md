@@ -80,7 +80,9 @@ Two types of testing are performed, called static testing and dynamic testing. S
 
 We here utilized real-world data to train these framework. The trained model in terms of PREDATOR and PV-RCNN++ can be downloaded as follows: 
 - [Detection/Trained model](https://1drv.ms/u/s!AnRiouA_fmTVh6UpNm4gtWq02GF8JA): This model can be used for UR3e and UR5e robot base detection task
-- [Registration/Trained model](https://1drv.ms/u/s!AnRiouA_fmTVh6UnauE3yxdVcgU5qQ): This model can be used for robot base registration. A model of robot base can be obtained from [Here](./dataset/readme.md).
+- [Registration/Trained model](https://1drv.ms/u/s!AnRiouA_fmTVh6UnauE3yxdVcgU5qQ): This model can be used for robot base registration. A model of robot base can be obtained from [Here](./dataset/readme.md). 
+
+If you want to train you own model, here[[link](https://1drv.ms/u/c/d5647e3fe0a26274/EXRiouA_fmQggNXbXwIAAAABjI2e4XLUgzOzJLiLwyvw8Q?e=2ES5KW)] is an example you can follow including the .pkl file and resource you can train.
 
 ## Papers
 
